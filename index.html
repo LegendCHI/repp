@@ -24,6 +24,25 @@
       color: #ccc;
       font-size: 1.2em;
     }
+
+    /* GRAN TE AMO */
+    .teamo {
+      font-size: 5em;
+      font-weight: bold;
+      color: #ff77b7;
+      text-shadow: 0 0 20px #ff77b7, 0 0 40px #ff77b7;
+      margin: 40px 0;
+      animation: latido 1.5s infinite, brillo 3s infinite alternate;
+    }
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    @keyframes brillo {
+      0% { text-shadow: 0 0 20px #ff77b7, 0 0 40px #ff77b7; }
+      100% { text-shadow: 0 0 40px #ffb7d9, 0 0 80px #ffb7d9; }
+    }
+
     .card {
       background: rgba(255,255,255,0.05);
       border-radius: 12px;
@@ -77,6 +96,9 @@
   </style>
 </head>
 <body>
+  <!-- GRAN TE AMO -->
+  <div class="teamo">TE AMO</div>
+
   <header>
     <h1>Para celebrar tu luz — un regalo virtual</h1>
     <p class="subtitle">Poema, recuerdos y una melodía para que el momento brille un poco más.</p>
